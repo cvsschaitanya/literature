@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 import GameBoard from './components/GameBoard';
+import RegisterBoard from './components/RegisterBoard';
+import { useState } from 'react';
 
 function App() {
-  return (
-    <GameBoard />
-  );
+    const [isRegistered, setIsRegistered] = useState(false);
+    const [name, setName] = useState(null);
+    return (
+        !isRegistered
+            ? <RegisterBoard setName={setName} setIsRegistered={setIsRegistered}/>
+            : <GameBoard playerId={name}/>
+    );
 }
 
 export default App;

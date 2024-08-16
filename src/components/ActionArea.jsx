@@ -57,7 +57,7 @@ export default function ActionArea({ actionAreaState, stateSetter, onAsk }) {
 
             <div className="chooserPanel">
                 <div className="chooserContainer">
-                    <Button>
+                    <Button onClick={onAsk} variant={actionAreaState.myTurn ? "primary" : "secondary"}>
                         Ask
                     </Button>
                 </div>

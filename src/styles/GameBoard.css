@@ -71,7 +71,8 @@
 
 .itemChooser {
     text-align: center;
-    font-size: x-large;
+    font-size: large;
+    height: auto;
     background-color: whitesmoke;
 }
 
@@ -86,5 +87,9 @@
 .chosenItem {
     border: 1px solid white;
     background-color: black;
+    color: white;
+}
+
+.output {
     color: white;
 }
