@@ -1,49 +1,90 @@
 .gameBoard {
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(5, 18, 47);
 }
 
 .header {
-    height: 20%;
-    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    color: crimson;
 }
 
-.inactiveHeader {
+.actionArea {
+    padding: 3% 2%;
+    height: 25%;
+    width: 100%;
+    /* margin-top: 5%; */
+}
+
+.doubleLineSeperator {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    height: 4px;
+    width: 95%;
+    margin: auto;
+}
+
+.inactiveActionArea {
     background-color: grey;
 }
 
-.activeHeader {
-    background-color: rgb(30, 65, 135);
+.chooserPanel {
+    height: 25%;
+    width: 100%;
+    /* background-color: yellow; */
 }
 
-.targetChooserPanel {
-    height: 50%;
+.chooserContainer {
     width: 100%;
-    background-color: yellow;
+    height: 100%;
+    /* background-color: tomato; */
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooser {
+    height: 80%;
+    width: 80%;
+    border-radius: 30px;
+    /* margin: 1% auto; */
+    background-color: darkolivegreen;
 }
 
 .targetChooserContainer {
     width: 50%;
-    height: 100%;
-    background-color: tomato;
-    float: left;
 }
 
-.targetChooser {
-    height: 90%;
-    width: 90%;
-    border-radius: 30px;
-    margin: 2% auto;
-    background-color: white;
+.setChooserContainer {
+    width: 12.5%;
+}
+
+.itemChooserContainer {
+    width: 16.66%;
+}
+
+.setChooser {
+    border: 5px solid black;
+}
+
+.itemChooser {
+    text-align: center;
+    font-size: x-large;
+    background-color: whitesmoke;
 }
 
 .chosenTarget {
-    background-color: green;
+    border: 1px solid white;
 }
 
-.moveSelectorPanel {
-    width: 100%;
-    height: 50%;
-    background-color: pink;
+.chosenSet {
+    border: 3px solid white;
+}
+
+.chosenItem {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
 }
